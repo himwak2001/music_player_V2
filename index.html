@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="music-container">
+			<h2>Music Player</h2>
+			<input type="text" id="search-song" placeholder="Search Song..." onkeyup="searchSongs()">
+			<div class="music-item" id="first">
+				<div class="song-item">
+					<img src="dheere_dheere_se.jpg" alt="song-image" class="image-song">
+					<div class="song-info">
+						<h3 class="song-title" title="Dheere Dheere Se Meri Zindagi Mein Aana">Dheere Dheere Se Meri
+							Zindagi Mein Aana</h3>
+						<p class="song-artist" title="Kumar Sanu">Kumar Sanu</p>
+					</div>
+				</div>
+			</div>
+			<div class="play-song-main">
+				<div class="progress-div" id="progress-div">
+					<div class="progress-bar" id="progress-bar"></div>
+				</div>
+				<div class="play-song">
+					<div class="play-music-info">
+						<img src="dheere_dheere_se.jpg" id="play-image">
+						<div class="play-info">
+							<h3 id="play-title" title="Dheere Dheere Se Meri Zindagi Mein Aana" id="play-title">
+								Dheere
+								Dheere
+								Se Meri
+								Zindagi Mein Aana</h3>
+							<p id="play-artist" title="Kumar Sanu">Kumar Sanu</p>
+						</div>
+					</div>
+					<div class="play-button">
+						<div class="previous">
+							<ion-icon name="play-skip-back" class="icon" id="previous-btn"></ion-icon>
+						</div>
+						<div class="play">
+							<ion-icon name="play" class="icon" id="play-btn"></ion-icon>
+						</div>
+						<div class="next">
+							<ion-icon name="play-skip-forward" class="icon" id="next-btn"></ion-icon>
+						</div>
+					</div>
+					<div class="progress-duration-meter">
+						<div id="current-time">0:00</div>
+						<span class="forward-slash">/</span>
+						<div id="duration">5:27</div>
+					</div>
+					<audio src="dheere_dheere_se.mp3" class="audio"></audio>
+				</div>
+			</div>
+		</div>
+
+		<div class="weather-forecasting">
+			<h2 class="weather-heading">Weather</h2>
+			<input type="text" placeholder="Enter city..." id="city-name" onchange="searchWeather()">
+			<div class="weather-info-icon">
+				<div class="weather-info">
+					<div class="city-icon">
+						<div class="city-main">
+							<div class="city">
+								<ion-icon name="location" id="location-icon"></ion-icon>
+								<h3 id="location-name">Nagpur</h3>
+							</div>
+							<p><span id="temperature">23</span> °C</p>
+						</div>
+						<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" id="icon-weather">
+					</div>
+					<div class="weather-des">
+						<p class="font-design">Pressure: <span id="pressure">1014</span> hPa</p>
+						<p class="font-design">Humidity: <span id="humid">49</span> %</p>
+						<p class="font-design">Wind Speed: <span id="wind_speed">2.87</span> m/s</p>
+						<p class="font-design">Description: <span id="description">few clouds</span> </p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+
+	<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+	<!-- 	<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #C2F0FC;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar{
+	height: 50px;
+	margin: 20px 50px;
+	display: flex;
+	align-items: center;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar li{
+	list-style: none;
+	padding: 0px 20px;
+	background-color: #FFFFFF;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.music-container{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+	margin: 20px 50px;
+	padding: 30px;
+	width: 68.5%;
+}
+
+.music-container h2{
+	background-color: transparent;
+	border-bottom: 2px solid grey;
+	text-transform: uppercase;
+}
+
+.song-item{
+	background-color: #EFF5F5;
+	width: 150px;
+	border-radius: 10px;
+	margin: 10px 10px;
+	border: 2px solid #EFF5F5;
+}
+
+.song-item:hover{
+	cursor: pointer;
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.song-item img{
+	width: 100%;
+	height: 100px;
+	border-radius: 10px;
+}
+
+.song-item h3, p{
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.song-title{
+	margin: 0;
+	font-size: 15px;
+	background-color: transparent;
+}
+
+.song-artist{
+	font-size: 13px;
+	background-color: transparent;
+}
+
+.song-info{
+	padding: 10px;
+	text-align: center;
+	background-color: transparent;
+}
+
+.music-item{
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px 5px 50px 5px;
+	clear: both;
+}
+
+/* =============================================AUDIO CONTROL================================================*/
+.play-song{
+	display: flex;
+	flex-direction: row;
+	background-color: #FFFFFF;
+	justify-content: space-between;
+	margin: 20px 20px 0px 20px;
+}
+
+.play-song-main{
+	background-color: #FFFFFF;
+}
+
+.play-music-info{
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#play-image{
+	height: 40px;
+	width: 50px;
+	border-radius: 5px;
+}
+
+#play-title{
+	font-size: 15px;
+	background-color: #FFFFFF;
+}
+
+#play-artist{
+	font-size: 13px;
+	background-color: #FFFFFF;
+}
+
+.play-info{
+	background-color: #FFFFFF;
+}
+
+.play-button{
+	display: flex;
+	background-color: #FFFFFF;
+	gap: 20px;
+	align-items: center;
+}
+
+.icon{
+	font-size: 26px;
+	background-color: #FFFFFF;
+}
+
+.icon:hover{
+	cursor: pointer;
+	color: #406882;
+	transition: 0.5s;
+}
+
+.previous, .play, .next{
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+}
+
+.progress-duration-meter{
+	display: flex;
+	flex-direction: row; 
+	background-color: #FFFFFF;
+	align-items: center;
+	gap: 5px;
+}
+
+#current-time, #duration{
+	background-color: #FFFFFF;
+	font-size: 18px;
+}
+
+.forward-slash{
+	background-color: #FFFFFF;
+	color: black;
+	font-size: 18px;
+}
+
+.progress-div{
+	width: 100%;
+	height: 0.2rem;
+	background-color: #DFF6FF;
+	border-radius: 4rem;
+	position: relative;
+	margin-top: 0.5rem;
+	transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.progress-bar{
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #1363DF;
+	border-radius: 4rem;
+}
+
+/* ================================================SEARCH-BAR================================================= */
+#search-song{
+	margin: 20px;
+	float: right;
+	height: 30px;
+	width: 200px;
+	border: 1px solid grey;
+	background-color: transparent;
+	border-radius: 5px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+/* ===============================================WEATHER FORECASTING======================================== */
+.weather-forecasting{
+	width: 20%;
+	align-items: center;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+	margin: 20px 50px 20px 0px;
+	padding: 30px;
+	height: 300px;
+}
+
+.weather-heading{
+	background-color: transparent;
+	border-bottom: 2px solid grey;
+	text-transform: uppercase;
+}
+
+#city-name{
+	margin-top: 10px;
+	height: 30px;
+	width: 200px;
+	border: 1px solid grey;
+	background-color: transparent;
+	border-radius: 5px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.city{
+	display: flex;
+	margin-top: 10px;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	background-color: #FFFFFF;
+}
+
+#location-icon{
+	font-size: 20px;
+	background-color: #FFFFFF;
+	margin-bottom: 0px;
+}
+
+#location-name{
+	font-size: 22px;
+	background-color: #FFFFFF;
+}
+
+.font-design{
+	font-size: 15px;
+	background-color: #FFFFFF;
+}
+
+#temperature{
+	font-size: 40px;
+	background-color: #FFFFFF;
+	font-weight: bold;
+}
+
+.weather-des p{
+	background-color: #FFFFFF;
+}
+
+#pressure, #humid,  #wind_speed, #description{
+	background-color: #FFFFFF;
+}
+
+.weather-icon{
+	background-color: #FFFFFF;
+}
+
+#icon-weather{
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 100px;
+}
+
+.city-main{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+}
+
+.city-icon{
+	display: flex;
+	gap: 20px;
+	background-color: #FFFFFF;
+}
+
+.city-main p{
+	background-color: #FFFFFF;
+}
